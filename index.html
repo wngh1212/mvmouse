@@ -1,0 +1,26 @@
+<style>
+.iconmouse{position: absolute; bottom: 50px; left: 50%; transform: translate(-50%, 0); z-index: 1; width: 30px; height: 50px; border:2px solid #ffffff; border-radius: 20px;}
+@keyframes Mouse_act
+{
+0%{transform:translateY(5px);}
+
+50%{transform:translateY(-5px);}
+
+100%{transform:translateY(5px);}
+
+}
+.iconmouse::before{content: 'SCROLL'; display: block; position: absolute; top: -35px; left: 50%; margin-left: -29px; width: 60px; font-size: 16px; color: #ffffff; letter-spacing: 0px; font-weight:600;}
+.iconmouse .ball{position: absolute; top: 8px; left: 13px; width:4px; height: 4px; background: #ffffff; border-radius: 50%; animation: Mouse_act 1s ease-out infinite;}
+</style>
+<video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+ <source src="video.mp4" type="video/mp4">
+<source src="video.webm" type="video/webm">
+</video>
+
+<div class="iconmouse">
+                <span class="ball"></span>
+            </div>
+<h3><span style="color:white">자기소개</span></h3>
+<h4><span style="color:white">성일정보고 2학년 14반의 강주호입니다.</span></h4>
+<br><span style="color:white">좋아하는 것은 영화보기, 친구랑 게임하기, 아무생각없이
+누워있는 것입니다. </span>
